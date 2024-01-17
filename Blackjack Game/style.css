@@ -1,0 +1,59 @@
+/* || RESET */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || VARIABLES */
+:root {
+    --BG-COLOR: rgba(6, 75, 6, 0.87);
+    --COLOR: whitesmoke;
+    --BTN-COLOR: rgba(255, 217, 0, 0.945);
+}
+
+/* || GENERAL STYLES */
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--BG-COLOR);
+    color: var(--COLOR);
+    min-height: 100vh;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+/* || MAIN */
+h1 {
+    color: var(--BTN-COLOR);
+}
+
+p {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+button {
+    width: 200px;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: var(--BTN-COLOR);
+    color: var(--BG-COLOR);
+    border: 1px solid var(--BTN-COLOR);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover, button:focus-visible {
+    background-color: transparent;
+    color: var(--BTN-COLOR);
+}

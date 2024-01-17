@@ -1,0 +1,50 @@
+/* || RESET */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || VARIABLES */
+:root {
+    --BG-COLOR: rgba(0, 0, 0, 0.87);
+    --COLOR: whitesmoke;
+}
+
+/* || GENERAL STYLES */
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    max-width: 500px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: var(--BG-COLOR);
+    color: var(--COLOR);
+}
+
+/* || MAIN */
+.container {
+    margin: 1rem;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.list-items {
+    background-color: var(--COLOR);
+    color: var(--BG-COLOR);
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    padding: 0.4rem;
+    text-align: center;
+    border-bottom: 1px solid var(--BG-COLOR);
+}

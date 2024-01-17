@@ -1,0 +1,103 @@
+/* || RESET */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || VARIABLES */
+:root {
+    /* || COLOR */
+    --BGCOLOR: papayawhip;
+    --COLOR: #000;
+    --BTN-TEXTCOLOR: whitesmoke;
+    --BTNCOLOR-INCREMENT: rgb(185, 125, 14);
+    --BTNCOLOR-INCREMENT-HOVER: rgba(185, 125, 14, 0.6);
+    --BTNCOLOR-SAVE: rgb(14, 87, 14);
+    --BTNCOLOR-SAVE-HOVER: rgba(14, 87, 14, 0.6);
+    --BTNCOLOR-RESET: rgb(80, 20, 20);
+    --BTNCOLOR-RESET-HOVER: rgba(80, 20, 20, 0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --BGCOLOR: rgba(0, 0, 0, 0.90);
+        --COLOR: whitesmoke
+    }
+}
+
+/* || MAIN */
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 400px;
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: var(--BGCOLOR);
+    color: var(--COLOR);
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+button {
+    margin: 0.5em;
+    padding: 0.75em 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.btns {
+    display: grid;
+    justify-content: space-between;
+    column-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "in in"
+    "sv rs"
+    ;
+}
+
+#incrementBtn {
+    grid-area: in;
+    background-color: var(--BTNCOLOR-INCREMENT);
+    color: var(--BTN-TEXTCOLOR);
+}
+
+#incrementBtn:hover {
+    background-color: var(--BTNCOLOR-INCREMENT-HOVER);
+}
+
+#saveBtn {
+    grid-area: sv;
+    background-color: var(--BTNCOLOR-SAVE);
+    color: var(--BTN-TEXTCOLOR);
+}
+
+#saveBtn:hover {
+    background-color: var(--BTNCOLOR-SAVE-HOVER);
+}
+
+#resetBtn {
+    grid-area: rs;
+    background-color: var(--BTNCOLOR-RESET);
+    color: var(--BTN-TEXTCOLOR);
+}
+
+#resetBtn:hover {
+    background-color: var(--BTNCOLOR-RESET-HOVER);
+}

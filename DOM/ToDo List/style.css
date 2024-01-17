@@ -1,0 +1,96 @@
+/* || RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* || GENERAL STYLES */
+body {
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 500px;
+    height: 100vh;
+    background: url('background.png') no-repeat center/ cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    margin: 1rem;
+}
+
+.add-todo-container {
+    background: whitesmoke;
+    padding: 0.5em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+#todo-input {
+    flex: 4;
+    padding: .3rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 140%;
+    cursor: pointer;
+}
+
+#add-button {
+    border: 1px solid green;
+    color: green;
+}
+
+#add-button:hover {
+    background-color: green;
+    color: #fff;
+}
+
+/* || JAVASCRIPT STYLES */
+.todo-task {
+    background-color: whitesmoke;
+    margin-top: 8px;
+    padding: 0.5em;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    flex: 3;
+}
+
+.check-btn {
+    margin-right: 3px;
+    border: 1px solid orange;
+    color: orange;
+}
+
+.check-btn:hover {
+    background-color: orange;
+    color: whitesmoke;
+}
+
+.delete-btn {
+    border: 1px solid red;
+    color: red;
+}
+
+.delete-btn:hover {
+    background-color: red;
+    color: whitesmoke;
+}

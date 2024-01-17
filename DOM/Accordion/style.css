@@ -1,0 +1,75 @@
+/* || RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* || GENERAL STYLES */
+body {
+    background: url('background.png') no-repeat top right/ cover;
+    min-height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    background: whitesmoke;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 70%;
+    margin: 1em;
+}
+
+.accordion-title {
+    text-align: center;
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+}
+
+.accordion .content-container .question {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.541);
+    font-weight: bold;
+    padding-bottom: .5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.accordion .content-container .question::after {
+    content: "+";
+    font-size: 120%;
+    position: relative;
+    right: 3px;
+    transition: .5s;
+}
+
+.accordion .content-container .answer {
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+/* Javascript Styles */
+
+.accordion .content-container.active .answer {
+    height: 120px;
+}
+
+.accordion .content-container.active .question {
+    font-size: 0.75rem;
+    transition: .5s;
+}
+
+.accordion .content-container.active .question::after {
+    content: "-";
+    font-size: 150%;
+    transition: .5s;
+}

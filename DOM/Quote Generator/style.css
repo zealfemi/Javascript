@@ -1,0 +1,70 @@
+/* || RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* || VARIABLES */
+:root {
+    --HEADER-BG: black;
+    --HEADER-COLOR: whitesmoke;
+}
+
+/* || GENERAL STYLE */
+body {
+    background: url('background.png') no-repeat top right/ cover;
+    min-height: 100vh;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+}
+
+.container {
+    width: 100%;
+    margin: 1em;
+}
+
+.header {
+    background-color: var(--HEADER-BG);
+    color: var(--HEADER-COLOR);
+    text-align: center;
+    padding: 0.25em;
+    border-radius: 0.25rem;
+}
+
+.main-content {
+    background-color: var(--HEADER-COLOR);
+    color: var(--HEADER-BG);
+    text-align: center;
+    margin-top: 1em;
+    width: 100%;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0 0 10px var(--HEADER-BG);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+}
+
+.person {
+    font-size: 130%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(161, 119, 12);
+}
+
+button {
+    background-color: var(--HEADER-BG);
+    color: var(--HEADER-COLOR);
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5em 1.2rem;
+}
+
