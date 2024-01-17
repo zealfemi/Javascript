@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: wheat;
+    height: 100vh;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    background: rgb(4, 4, 41);
+    color: whitesmoke;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+button {
+    background: rgb(4, 4, 41);
+    border: none;
+    color: whitesmoke;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+#grid {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    border-radius: .5rem;
+    background: rgb(4, 4, 41);
+    padding: 1rem;
+}
+
+.square {
+    background: wheat;
+    border: 1px solid black;
+    border-radius: .7rem;
+    width: clamp(30%, 2.5vw, 200px);
+}
+
+.square:hover {
+    opacity: 0.4;
+}
+
+.mole {
+    background-image: url('mole.jpg');
+    background-size: cover;
+}
