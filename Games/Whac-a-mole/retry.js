@@ -54,7 +54,7 @@ function startGame() {
         gameStart = true
         startBtn.innerText = "Pause"        
         
-        changeMoleSquareTimer = setInterval(getRandomSquare, 1000)
+        changeMoleSquareTimer = setInterval(getRandomSquare, 500)
         countDownTimer = setInterval(countDown, 1000)
     } else {
         gameStart = false
