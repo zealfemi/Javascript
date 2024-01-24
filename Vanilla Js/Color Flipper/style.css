@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: papayawhip;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    letter-spacing: .3ch;
+}
+
+nav {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .7rem;
+    box-shadow: 0 0 15px black;
+}
+
+h3 {
+    color: rgb(11, 126, 172);
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+a:any-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:any-link:hover {
+    color: rgba(0, 0, 0, 0.411);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.color-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.849);
+    color: white;
+    font-size: clamp(1.6rem, 3vw, 3.5rem);
+    font-weight: bold;
+    padding: .2em .4em;
+    border-radius: 5px;
+}
+
+#color {
+    white-space: nowrap;
+    color: rgb(11, 126, 172);
+    text-transform: uppercase;
+}
+
+button {
+    background: transparent;
+    text-transform: uppercase;
+    padding: .5em 1rem;
+    letter-spacing: .3ch;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+

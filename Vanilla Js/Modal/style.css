@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('./background.PNG') no-repeat top right/ cover;
+    height: 100vh;
+    margin: 0 auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.modal-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-content {
+    position: absolute;
+    background-color: whitesmoke;
+    width: 400px;
+    height: 150px;
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border-radius: 10px;
+}
+
+#open-modal {
+    padding: .3em 1em;border-radius: 5px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-size: .7rem;
+    cursor: pointer;
+    background-color: transparent;
+}
+#open-modal:hover {
+    background-color: black;
+    color: white;
+}
+
+.modal {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.377);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: scale(0);
+    /* transition: .5s ease-in-out; */
+}
+
+.modal-content {
+    background-color: whitesmoke;
+    width: 400px;
+    height: 130px;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border-radius: 10px;
+    position: relative;
+}
+
+#close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(182, 6, 6);
+    border: none;
+    background-color: transparent;
+}
+#close-modal:hover {
+    transform: scale(1.2);
+}
+
+.show-modal {
+    transform: scale(1);
+}

@@ -1,0 +1,200 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+
+  --gen-color: rgb(13, 127, 172);
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-secondary);
+  background: rgb(232, 248, 255);
+  color: black;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  max-width: 650px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: 0.1rem;
+}
+
+h1 {
+  font-size: clamp(3rem, 2.5vw, 4rem);
+}
+h2 {
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
+}
+h3 {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+}
+h4 {
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+}
+
+p {
+  margin-bottom: .7em;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/*
+=============== 
+General Styles
+===============
+*/
+.container {
+  display: grid;
+  place-items: center;
+  gap: 3rem;
+}
+
+.title {
+  display: grid;
+  place-items: center;
+}
+
+.underline {
+  width: 5rem;
+  height: .3rem;
+  background-color: var(--gen-color);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review {
+  background: whitesmoke;
+  margin: .5rem 3.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px gray;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.image-container {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+#person-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+.image-container::after {
+  content: '❝';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--gen-color);
+  color: white;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  background-color: var(--gen-color);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  right: -5px;
+  top: -5px;
+}
+
+#author {
+  margin-top: 1.5em;
+  text-transform: capitalize;
+}
+
+#job {
+  text-transform: uppercase;
+  font-size: .7rem;
+  color: var(--gen-color);
+}
+
+.button-container {
+  margin-bottom: .5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.prev-btn, .next-btn {
+  border: 2px solid transparent;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: var(--gen-color);
+  background-color: transparent;
+  padding: .1em .5rem;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  border: 2px solid var(--gen-color);
+}
+
+.random-btn {
+  border: 2px solid var(--gen-color);
+  background-color: transparent;
+  padding: .3em .5rem;
+  font-size: .75rem;
+  color: var(--gen-color);
+  font-weight: bold;
+}
+
+.random-btn:hover {
+  background: var(--gen-color);
+  color: black;
+}
+
+
+
+
+
+

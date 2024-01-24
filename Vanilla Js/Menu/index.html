@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu</title>
+</head>
+<body>
+    <section class="menu">
+        <!-- title -->
+        <div class="title">
+            <h2>Our menu</h2>
+            <div class="underline"></div>
+        </div>
+
+        <!-- filter buttons -->
+        <div class="btns-container">
+            <button class="filter-btn" type="button" data-id="all">all</button>
+            <button class="filter-btn" type="button" data-id="breakfast">breakfast</button>
+            <button class="filter-btn" type="button" data-id="lunch">lunch</button>
+        </div>
+
+        <!-- menu items -->
+        <div class="section-center">
+
+            <!-- single item -->
+            <article class="menu-item">
+                <img src="./menu-item.jpeg" class="photo" alt="menu item">
+                <div class="item-info">
+                    <header>
+                        <h4 id="item-name">buttermilk pancakes</h4>
+                        <h4 id="item-price">$10</h4>
+                    </header>
+                    <p id="item-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad unde voluptates libero consequuntur sit molestias cupiditate eveniet distinctio praesentium.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <script src="app.js" defer></script>
+</body>
+</html>

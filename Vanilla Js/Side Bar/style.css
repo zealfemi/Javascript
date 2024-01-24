@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-color: gainsboro;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: .2em;
+    max-width: 1170px;
+}
+
+
+nav {
+    position: relative;
+    transition: 1s ease-in-out;
+}
+
+.nav-header {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em;
+    box-shadow: 0 2px 10px gray;
+}
+
+#show-menu {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    transition: .5s ease-in-out;
+}
+
+#show-menu:hover {
+    transform: rotate(1080deg);
+}
+
+.menu-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.side {
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7em 1em;
+    margin-bottom: .7em;
+}
+
+#close-menu {
+    border: none;
+    background: transparent;
+    color: rgb(194, 10, 10);
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+#close-menu:hover {
+    transform: scale(1.5);
+}
+
+#menu-links {
+    display: flex;
+    flex-flow: column;
+}
+
+#menu-links li {
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+#menu-links li a:any-link {
+    display: block;
+    width: 100%;
+    padding: .7em 1em;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: black;
+}
+
+#menu-links li a:any-link:hover {
+    background-color: cornflowerblue;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .7em;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+}
+
+#socials li {
+    cursor: pointer;
+}
+
+.sidebar {
+    transition: 1s ease-in-out;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(-100%);
+}
+
+.show-sidebar {
+    transform: translateX(0);
+}
+
+@media screen and (min-width: 550px) {
+    .sidebar {
+        width: 40%;
+    }
+}
