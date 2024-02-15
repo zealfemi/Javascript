@@ -1,0 +1,87 @@
+/* || RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(235, 250, 250);
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: .2ch;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+/* || MAIN STYLE */
+
+.section {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    place-content: center;
+    place-items: center;
+    margin: 4rem 1rem;
+    gap: 1.5rem;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.img-container {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.heading {
+    text-transform: uppercase;
+    color: rgb(43, 104, 128);
+}
+
+.sub-heading {
+    text-transform: capitalize;
+}
+
+.details {
+    color: rgb(82, 80, 80);
+}
+
+.countdown-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.time {
+    background-color: black;
+    color: whitesmoke;
+    padding: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1ch;
+    width: 70px;
+    height: 70px;
+    display: grid;
+    place-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    body {
+        width: 85vw;
+    }
+}

@@ -1,0 +1,116 @@
+/* || RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || GENERAL STYLE */
+
+body {
+    background: rgb(198, 234, 245);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 2rem auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: .2ch;
+    margin-bottom: .5rem;
+}
+
+button {
+    background-color: #d4cbcb;
+}
+
+/* || MAIN STYLE */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.article {
+    margin: 3rem 1rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1.75rem;
+}
+
+.img-container {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+.img-container:hover {
+    transform: scale(1.1);
+}
+
+.tabs-container {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    min-height: auto;
+}
+
+.tab-btns-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#tab-btn {
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    font-weight: bold;
+    letter-spacing: .2ch;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    text-transform: capitalize;
+}
+#tab-btn:first-child {
+    border-radius: 10px 0 0 0;
+}
+#tab-btn:last-child {
+    border-radius: 0 10px 0 0;
+}
+#tab-btn:hover {
+    transform: scale(1.1);
+    background-color: azure;
+}
+
+.active-tab {
+    background-color: whitesmoke;
+}
+
+.tab-contents {
+    padding: 1.2rem;
+}
+
+#tab-content {
+    transition: .5s ease-in-out;
+}
+
+#content-title {
+    text-transform: capitalize;
+}
+
+@media screen and (min-width: 568px) {
+    body {
+        max-width: 1000px;
+    }
+
+    .article {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .img-container {
+        height: 100%;
+    }
+}
