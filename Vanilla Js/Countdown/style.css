@@ -59,6 +59,7 @@ h1 {
 }
 
 .countdown-container {
+    text-transform: capitalize;
     display: flex;
     gap: 1rem;
 }
